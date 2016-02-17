@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "plot_linear")
+set(plot_linear_MAINTAINER "rafael <rafael@todo.todo>")
+set(plot_linear_DEPRECATED "")
+set(plot_linear_VERSION "0.0.0")
+set(plot_linear_BUILD_DEPENDS "message_generation" "roscpp" "rospy" "std_msgs")
+set(plot_linear_RUN_DEPENDS "message_runtime" "roscpp" "rospy" "std_msgs")
+set(plot_linear_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,9 @@
+ROSED:
+ directly edit a file within a package by using the package name rather than having to type the entire path to the package
+
+
+rosed [package_name] [filename]
+
+EX: rosed roscpp Logger.msg
+
+uses vim as text editor

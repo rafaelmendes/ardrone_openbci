@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/devel/setup.sh

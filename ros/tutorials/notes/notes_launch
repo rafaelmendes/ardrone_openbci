@@ -1,0 +1,9 @@
+ROSLAUNCH
+
+starts nodes as defined in a launch file
+
+# starts a given a launch file
+roslaunch [package] [filename.launch]
+
+.launch files are basically a script which runs all the cmds necessary to start a node in ros 
+it is written in tagging XML language 

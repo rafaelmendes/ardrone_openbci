@@ -1,0 +1,22 @@
+rqt_console:
+logging archtecture to display output from nodes
+
+useful to monitor whats going on between nodes
+
+# open log console, which will print the messages (and let you manage it)
+rosrun rqt_console rqt_console
+
+$ open the logger level. Allows you to select which level of messages will be printed
+rosrun rqt_logger_level rqt_logger_level
+
+the logger level follows the hierarchy below to print messages:
+Fatal - most important
+Error
+Warn
+Info
+Debug
+
+if you select debug, all other messages will also be printed. If error is selected, only error and fatal messages will be printed
+
+reference:
+http://wiki.ros.org/ROS/Tutorials/UsingRqtconsoleRoslaunch

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "plot_ch1")
+set(plot_ch1_MAINTAINER "rafael <rmendesduarte@gmail.com>")
+set(plot_ch1_DEPRECATED "")
+set(plot_ch1_VERSION "0.0.0")
+set(plot_ch1_BUILD_DEPENDS "message_generation" "roscpp" "rospy" "std_msgs")
+set(plot_ch1_RUN_DEPENDS "message_runtime" "roscpp" "rospy" "std_msgs")
+set(plot_ch1_BUILDTOOL_DEPENDS "catkin")

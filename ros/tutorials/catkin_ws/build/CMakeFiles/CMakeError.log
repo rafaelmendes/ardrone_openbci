@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1030124298/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1030124298.dir/build.make CMakeFiles/cmTryCompileExec1030124298.dir/build
+make[1]: Entering directory `/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1030124298.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1030124298.dir/CheckSymbolExists.c.o   -c /files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1030124298
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1030124298.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1030124298.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1030124298 -rdynamic 
+CMakeFiles/cmTryCompileExec1030124298.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1030124298] Error 1
+make[1]: Leaving directory `/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1030124298/fast] Error 2
+
+File /files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1991861305/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1991861305.dir/build.make CMakeFiles/cmTryCompileExec1991861305.dir/build
+make[1]: Entering directory `/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1991861305.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1991861305.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1991861305
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1991861305.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1991861305.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1991861305 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1991861305] Error 1
+make[1]: Leaving directory `/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1991861305/fast] Error 2
+
+

@@ -1,0 +1,8 @@
+prefix=/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/install
+
+Name: beginner_tutorials
+Description: Description of beginner_tutorials
+Version: 0.0.0
+Cflags: -I/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/install/include
+Libs: -L/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/install/lib 
+Requires: 

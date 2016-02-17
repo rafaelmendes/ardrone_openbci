@@ -1,0 +1,2 @@
+mic
+-DCATKIN_DEVEL_PREFIX=/home/rafael/Documents/bci_openbci_master/ros/mic_ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rafael/Documents/bci_openbci_master/ros/mic_ros/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+N = 10; % number of points in the dataset
+
+X = rand(N, 1); % dataset
+
+Xmean = mean(X,1); % compute the mean
+
+
+

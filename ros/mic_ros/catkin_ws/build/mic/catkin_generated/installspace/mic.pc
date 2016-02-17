@@ -1,0 +1,8 @@
+prefix=/home/rafael/Documents/bci_openbci_master/ros/mic_ros/catkin_ws/install
+
+Name: mic
+Description: Description of mic
+Version: 0.0.0
+Cflags: -I/home/rafael/Documents/bci_openbci_master/ros/mic_ros/catkin_ws/install/include
+Libs: -L/home/rafael/Documents/bci_openbci_master/ros/mic_ros/catkin_ws/install/lib 
+Requires: 

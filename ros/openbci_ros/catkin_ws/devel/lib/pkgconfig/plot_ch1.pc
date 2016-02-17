@@ -1,0 +1,8 @@
+prefix=/home/rafael/Documents/codes/bci_openbci_master/codes/ros/openbci_ros/catkin_ws/devel
+
+Name: plot_ch1
+Description: Description of plot_ch1
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rafael/Documents/codes/bci_openbci_master/codes/ros/openbci_ros/catkin_ws/devel/lib 
+Requires: 

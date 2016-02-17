@@ -1,0 +1,2 @@
+plot_ch1
+-DCATKIN_DEVEL_PREFIX=/home/rafael/Documents/codes/bci_openbci_master/codes/ros/openbci_ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rafael/Documents/codes/bci_openbci_master/codes/ros/openbci_ros/catkin_ws/install -G Unix Makefiles

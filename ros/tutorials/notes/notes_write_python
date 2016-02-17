@@ -1,0 +1,4 @@
+BUILDING NODES:
+
+cd ~/catkin_ws
+catkin_make

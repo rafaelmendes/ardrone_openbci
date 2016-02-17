@@ -1,0 +1,47 @@
+CREATING MESSAGES AND SERVICES
+
+msg: msg files are simple text files that describe the fields of a ROS message
+inside the text files, there are just variable declarations in each line
+the variables can have the following formats:
+int8, int16, int32, int64 (plus uint*)
+float32, float64
+string
+time, duration
+other msg files
+variable-length array[] and fixed-length array[C]
+header
+
+
+srv: an srv file describes a service. It is composed of two parts: a request and a response.
+the files are similar to msg files, except they contain two parts: request and response
+
+ex:
+int64 A  -> request part
+int64 B
+--- 	 -> response part
+int64 Sum
+
+CREATING MESSAGES:
+
+# create a variable num inside message Num
+echo "int64 num" > msg/Num.msg
+
+# follow tutorial on to config cmake
+http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv
+
+----
+# shows messages
+rosmsg show [message type]
+ex: rosmsg show beginner_tutorials/Num
+
+
+CREATING SERVICES:
+
+Follow instructions from:
+http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv
+
+to config Cmake list
+
+# shows the type of message
+rossrv show <service type>
+ex: rossrv show beginner_tutorials/AddTwoInts

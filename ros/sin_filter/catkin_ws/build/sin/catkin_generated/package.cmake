@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "sin")
+set(sin_MAINTAINER "rafael <rafael@todo.todo>")
+set(sin_DEPRECATED "")
+set(sin_VERSION "0.0.0")
+set(sin_BUILD_DEPENDS "message_generation" "roscpp" "rospy" "std_msgs")
+set(sin_RUN_DEPENDS "message_runtime" "roscpp" "rospy" "std_msgs")
+set(sin_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mic")
+set(mic_MAINTAINER "rafael <rafael@todo.todo>")
+set(mic_DEPRECATED "")
+set(mic_VERSION "0.0.0")
+set(mic_BUILD_DEPENDS "message_generation" "roscpp" "rospy" "std_msgs")
+set(mic_RUN_DEPENDS "message_runtime" "roscpp" "rospy" "std_msgs")
+set(mic_BUILDTOOL_DEPENDS "catkin")

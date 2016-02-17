@@ -1,0 +1,62 @@
+CREATING AND BUILDING A PACKAGE
+
+To see if a package is installed
+# rospack find [package_name]
+
+$ROS_PACKAGE_PATH -> contains the directories where the ROS packages are
+
+To access ros log folder
+roscd log
+
+In Catkin workspace after building, three folders are created:
+build - where CMake is invoked to build the catkin packages in the source space.
+devel - is where built targets are placed prior to being installed
+src (it was already there) - contains the source code of catkin packages
+
+NODES
+
+- can be written in two languages C++ and python, using:
+	rospy = python client library
+	roscpp = c++ client library
+
+roscore # Creates a master server
+
+$ rosnode list # list the active nodes
+$ rosnode info /rosout # returns info about a specific node
+
+# Brings up a new node
+rosrun [package_name] [node_name] __name:=NODE_NAME
+
+# Ping server
+rosnode ping NODE_NAME
+
+# Plots the block diagram of the whole system, including the nodes posting and subscribing
+# It is usefull to identify the topic which are being used to communicate between nodes
+rosrun rqt_graph rqt_graph
+
+# to monitor what is being published to a topic:
+rostopic echo [topic]
+
+# lists the topics being published to and subscribed
+rostopic list -v
+
+# prints the type of topic. To publish and subscribe to a topic, the messages have to be the same type
+rostopic type [topic]
+
+# shows the details about the message being sent
+rosmsg show geometry_msgs/Twist
+
+# publishes data to topic
+rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+	rostopic pub # publishing cmd
+	-1 # only publish one message then exit
+	/turtle1/cmd_vel # name of the topic
+	-- # no arguments
+	'[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]' # actual data
+
+optional arguments:
+-r 1 # publishes every 1 second
+
+# Plots the data being published to a topic
+rosrun rqt_plot rqt_plot
+

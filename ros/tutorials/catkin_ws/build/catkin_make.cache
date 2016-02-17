@@ -1,0 +1,2 @@
+beginner_tutorials:plot_linear
+-DCATKIN_DEVEL_PREFIX=/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/files/Documents/bci_openbci_master/ros/tutorials/catkin_ws/install -G Unix Makefiles

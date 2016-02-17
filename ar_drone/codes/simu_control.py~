@@ -1,0 +1,13 @@
+import os
+
+os.system("rostopic pub -1 /ardrone/land std_msgs/Empty")
+
+getch = _Getch()
+
+print 'Please enter your guess: '
+x = getch()
+
+if (int(x) == 1):
+    print 'correct'
+else:
+    print 'wrong'

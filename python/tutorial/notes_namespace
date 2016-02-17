@@ -1,0 +1,29 @@
+ABOUT NAMESPACES:
+
+1) namespace is a mapping from names to objects. EX: set of builtin functions, global names in module,
+local names in a function invocation
+
+print(globals()) # prints global namespace
+print(locals()) # prints local namespace
+
+2) there is NO relationship between names from different namespaces
+
+3) the namespace of a function is created when the function is initialize and deleted when it returns
+
+SCOPES: region where namespaces are accessible 
+at ny execution there are at least three scopes which are acessed in the following order:
+- innescope or local scope: contains local names
+- global scope:
+	- scope of enclosing functions: contains non-local and non-global names
+	- next-to-last scope: contains the global variables of the current module
+- outermost scope: contains the builtin names
+
+
+Good reference:
+http://spartanideas.msu.edu/2014/05/12/a-beginners-guide-to-pythons-namespaces-scope-resolution-and-the-legb-rule/
+
+sequency of scopes to look for names in namespaces
+
+Local -> Enclosed -> Global -> Built-in,
+
+Using from a_module import * can cause problems if there are two objects with the same name. (this kind of import is used to avoid having to use a prefix before calling functions from modules)

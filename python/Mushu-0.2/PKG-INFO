@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: Mushu
+Version: 0.2
+Summary: Brain Computer Interfacing signal acquisition software.
+Home-page: http://venthur.github.io/mushu/
+Author: Bastian Venthur
+Author-email: bastian.venthur@tu-berlin.de
+License: GPL2
+Download-URL: http://github.com/venthur/mushu/
+Description: A Python library for BCI signal acquisition. It can be used as a stand-alone application or as a library.
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Libraries

@@ -1,0 +1,49 @@
+SERVICES:
+Another way that nodes can communicate with each other. Allow nodes to send a request and receive a response.
+
+# list all active services
+rosservice list
+
+# calls a service
+rosservice call [service] [args]
+
+# Check which arg has to be passed on a given service call
+rosservice type spawn| rossrv show
+
+PARAMETERS:
+shared, multi-variate dictionary that is accessible via network APIs
+ex: 
+/camera/left/name: leftcamera
+/camera/left/exposure: 1
+
+the paramenter 'name' has the value left camera
+				'exposure' has the value 1
+
+left is a dictionary containing 'name' and 'exposure'
+camera is a dictionary containing 'left'
+
+Parameters can have the following formats:
+- 32-bit integers
+- booleans
+- strings
+- doubles
+- iso8601 dates
+- lists
+- base64-encoded binary data
+
+COMMANDS TO DEAL WITH PARAMETERS
+# lists all the available parameters
+rosparam list
+
+# sets and reads a parameter
+rosparam set [param_name]
+rosparam get [param_name]
+
+# after changing the parameter, a clear is required for the change to take place:
+rosservice call clear
+
+# saves all parameters to a file
+rosparam dump [file_name] [namespace]
+
+# loads parameters from a file
+rosparam load [file_name] [namespace]
