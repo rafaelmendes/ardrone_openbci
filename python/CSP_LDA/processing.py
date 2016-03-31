@@ -45,7 +45,11 @@ def loadBiosig(fname):
 
     return data, sample_rate
 
+def readEvents(csv_path):
+    
+    t_events = np.loadtxt(open(csv_path,"rb"), skiprows=1, usecols=(2,0,1))
 
+    return t_events
 
 def selectChannels(data_in, channels):
     
